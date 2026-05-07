@@ -1,0 +1,18 @@
+[phases.setup]
+nixPkgs = [
+    'python312',
+    'python312Packages.fastapi',
+    'python312Packages.uvicorn',
+    'python312Packages.sqlalchemy',
+    'python312Packages.psycopg2',
+    'python312Packages.python-dotenv',
+    'python312Packages.alembic',
+    'python3.12-pyjwt',
+    'python3.12-cryptography'
+]
+
+[phases.install]
+cmds = ['pip install -r requirements.txt']
+
+[start]
+cmd = 'uvicorn app.main:app --host 0.0.0.0 --port $PORT' 

@@ -1,0 +1,1 @@
+export const defaultApiUrl = 'https://backend-production-43f4.up.railway.app'

@@ -1,0 +1,13 @@
+[phases.setup]
+nixPkgs = [
+    'python312',
+    'python312Packages.aiogram',
+    'python312Packages.python-dotenv',
+    'python312Packages.httpx'
+]
+
+[phases.install]
+cmds = ['pip install -r requirements.txt']
+
+[start]
+cmd = 'python main.py' 

@@ -1,0 +1,5 @@
+declare module '@/views/Dashboard.vue'
+declare module '@/views/admin/Dashboard.vue'
+declare module '@/views/admin/Users.vue'
+declare module '@/views/admin/Roles.vue'
+declare module '@/views/admin/Questionnaires.vue' 

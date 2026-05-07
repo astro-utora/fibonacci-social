@@ -1,0 +1,107 @@
+POST http://localhost:8000/api/auth/telegram
+Content-Type: application/json
+
+{
+    "id":1562163,
+    "first_name":"Stanislav",
+    "last_name":"Kapulkin",
+    "username":"stask",
+    "photo_url":"https://t.me/i/userpic/320/fogjxH0mqSEffNsNlWZGz_Z8mHfumLzTTJYkyHN3x4c.jpg",
+    "auth_date":1738927294,
+    "hash":"16c286fba7dc6390dfc887469a96d1e2e1c9ac8b9c1409d574450b8c22fb9db5"
+}
+
+###
+POST https://backend-production-43f4.up.railway.app/api/auth/telegram
+Content-Type: application/json
+
+{
+    "id":1562163,
+    "first_name":"Stanislav",
+    "last_name":"Kapulkin",
+    "username":"stask",
+    "photo_url":"https://t.me/i/userpic/320/fogjxH0mqSEffNsNlWZGz_Z8mHfumLzTTJYkyHN3x4c.jpg",
+    "auth_date":1738965337,
+    "hash":"685cb585c8fcbe0db977e1cf86d13b639631ec1b8a95d3fcc2099edb40babd77"
+}
+
+###
+POST http://localhost:8000/api/invitations/
+Content-Type: application/json
+
+{"name":"a",
+"location":"a",
+"role":"a",
+"workplace":"a",
+"birth_date":"a",
+"goals":"a",
+"education":"a",
+"phone_number":"a",
+"referral":"2c530bcf-735a-45dc-8e19-e9410db17e31"}
+
+###
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "name": "Stanislav",
+    "location": "Israel",
+    "role": "CTO",
+    "workplace": "Viete",
+    "birth_date": "1989-04-28",
+    "goals": "Traction",
+    "education": "Master degree in Computer Science",
+    "referral": null,
+    "phone_number": "+972544723177",
+    "telegram_id": 1562163
+}
+
+###
+POST http://localhost:8000/api/auth/telegram
+Content-Type: application/json
+
+{
+    "id":1562163,
+    "first_name":"Stanislav",
+    "last_name":"Kapulkin",
+    "username":"stask",
+    "photo_url":"https://t.me/i/userpic/320/fogjxH0mqSEffNsNlWZGz_Z8mHfumLzTTJYkyHN3x4c.jpg",
+    "auth_date":1739029017,
+    "hash":"e3b4ab50dd78a1a0b6cf1a907ea9835a467d108dfd42b44d294f8272cadc59d0"
+}
+
+###
+http://localhost:3000/telegram-callback#tgAuthResult=eyJpZCI6MTU2MjE2MywiZmlyc3RfbmFtZSI6IlN0YW5pc2xhdiIsImxhc3RfbmFtZSI6IkthcHVsa2luIiwidXNlcm5hbWUiOiJzdGFzayIsInBob3RvX3VybCI6Imh0dHBzOlwvXC90Lm1lXC9pXC91c2VycGljXC8zMjBcL2ZvZ2p4SDBtcVNFZmZOc05sV1pHel9aOG1IZnVtTHpUVEpZa3lITjN4NGMuanBnIiwiYXV0aF9kYXRlIjoxNzM5MDI5MDE3LCJoYXNoIjoiZTNiNGFiNTBkZDc4YTFhMGI2Y2YxYTkwN2VhOTgzNWE0NjdkMTA4ZGZkNDJiNDRkMjk0ZjgyNzJjYWRjNTlkMCJ9
+
+###
+POST https://backend-production-43f4.up.railway.app/api/invitations/
+Content-Type: application/json
+
+{
+    "name":"Jonathan",
+    "location":"Paris",
+    "role":"CEO",
+    "workplace":"Fibonacci",
+    "birth_date":"1995-12-08",
+    "goals":"Connectivity",
+    "education":"bc",
+    "phone_number":"+972 50-995-3991",
+    "referral":"5e5b32c4-6b58-4cd1-804e-dc577c46dbf5"
+}
+
+
+###
+POST https://backend-production-43f4.up.railway.app/api/invitations/
+Content-Type: application/json
+
+{
+    "name":"Test",
+    "location":"Galactica",
+    "role":"CEO",
+    "workplace":"42",
+    "birth_date":"2000-01-01",
+    "goals":"Connectivity",
+    "education":"Master",
+    "phone_number":"+972 1234567",
+    "referral":"5e5b32c4-6b58-4cd1-804e-dc577c46dbf5"
+}

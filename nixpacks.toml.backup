@@ -1,0 +1,26 @@
+[phases.setup]
+nixPkgs = [
+    'nodejs',
+    'yarn',
+    'python312',
+    'python312Packages.pip',
+    'python312Packages.supervisor',
+    'python312Packages.fastapi',
+    'python312Packages.uvicorn',
+    'python312Packages.sqlalchemy',
+    'python312Packages.psycopg2',
+    'python312Packages.python-dotenv',
+    'python312Packages.alembic',
+    'python312Packages.aiogram'
+]
+
+[phases.install]
+cmds = [
+  'cd frontend && yarn install',
+]
+
+[phases.build]
+cmds = ['cd frontend && yarn build']
+
+[start]
+cmd = 'supervisord -c supervisord.conf' 
